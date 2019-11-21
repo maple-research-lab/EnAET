@@ -157,6 +157,14 @@ Then you can see the result in [server_ip]:9000 in browser.
 ### Training Records
 We keep all the training records in "Records" directory. For someone want to reproduce our results, I believe it's a very good reference to make sure you are in the correct path.
 
+### Resume your training
+Compared to before, you should specify the -M=[model_path] --resume=1 --start_epoch=[previous_stop_epoch]     
+For example(with cifar-100 10,000 labels):
+```
+python3 main.py --mode=0 -F=tmp_data/cifar --choose=0 --lr=0.002 --lr1=0.1 --batch_size=128 --num_workers=4 --type=0 --KL_Lambda=1.0 --lambda=10.0 --lambda1=7.5 --lambda2=5.0 --lambda3=2.0 --lambda4=0.5 --max_lambda=1 --max_lambda1=0.75 --max_lambda2=0.5 --max_lambda3=0.2 --max_lambda4=0.05 --portion=0.2 --beta=150 --mix_mode=1  --Mixmatch_warm=50 --dataset=cifar100 --resume=1 -M=[model_path] --start_epoch=292
+```
+Here I will save the checkpoint.pth.tar model under model sub dir of your current log directory (which described before). Please check train.log to make sure your resume step.
+
 #### CIFAR-10 250 Labels
 ![Accuracy](Records/cifar10/label250/Accuracy_top1.svg)
 Green line is the training accuracy on trainset(250 labeled images), blue is the validation set(which is not actually used for validation, it's actually the whole unlabelled data+labeled data in training set), grey is the testing set performance, yellow is the student model's performance on testing set. More details related to loss please check in "Records" directory.
