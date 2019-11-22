@@ -105,9 +105,9 @@ python3 main.py -h
 --Mixmatch_warm: warm factor for MixMatch beta hyper parameter
 --dataset: specify the dataset you will use for training
 ```
-When you want to run with "Wide Resnet-28-2-Large", which requires 4 gpus, simply change two parameters: 
+When you want to run with "Wide Resnet-28-2-Large", which requires 4 gpus:    
+simply change two parameters: --type=1 --choose=0,1,2,3
 ```
---type=1 --choose=0,1,2,3
 python3 main.py --mode=0 -F=tmp_data/cifar --choose=0,1,2,3 --lr=0.002 --lr1=0.1 --batch_size=128 --num_workers=4 --type=1 --KL_Lambda=1.0 --lambda=10.0 --lambda1=7.5 --lambda2=5.0 --lambda3=2.0 --lambda4=0.5 --max_lambda=1 --max_lambda1=0.75 --max_lambda2=0.5 --max_lambda3=0.2 --max_lambda4=0.05 --portion=0.08 --beta=75 --mix_mode=1  --Mixmatch_warm=50 --dataset=cifar10
 ```
 This is for running cifar-10 with 4,000 labels.
@@ -118,7 +118,7 @@ Simply change --dataset --portion --beta(follow MixMatch setting)
 python3 main.py --mode=0 -F=tmp_data/cifar --choose=0 --lr=0.002 --lr1=0.1 --batch_size=128 --num_workers=4 --type=0 --KL_Lambda=1.0 --lambda=10.0 --lambda1=7.5 --lambda2=5.0 --lambda3=2.0 --lambda4=0.5 --max_lambda=1 --max_lambda1=0.75 --max_lambda2=0.5 --max_lambda3=0.2 --max_lambda4=0.05 --portion=0.2 --beta=150 --mix_mode=1  --Mixmatch_warm=50 --dataset=cifar100
 ```
 This is the command for running CIFAR100 with 10,000 labels.   
-When you want to run with "Wide Resnet-28-2-Large", which requires 4 gpus, simply change two parameters:
+When you want to run with "Wide Resnet-28-2-Large", which requires 4 gpus:    
 Simply change --type=1 --choose=0,1,2,3:
 ```
 python3 main.py --mode=0 -F=tmp_data/cifar --choose=0,1,2,3 --lr=0.002 --lr1=0.1 --batch_size=128 --num_workers=4 --type=1 --KL_Lambda=1.0 --lambda=10.0 --lambda1=7.5 --lambda2=5.0 --lambda3=2.0 --lambda4=0.5 --max_lambda=1 --max_lambda1=0.75 --max_lambda2=0.5 --max_lambda3=0.2 --max_lambda4=0.05 --portion=0.2 --beta=150 --mix_mode=1  --Mixmatch_warm=50 --dataset=cifar100
@@ -131,7 +131,7 @@ Simply change --dataset --portion --beta(follow MixMatch setting) -F (change to 
 python3 main.py --mode=0 -F=tmp_data/SVHN --choose=0 --lr=0.002 --lr1=0.1 --batch_size=128 --num_workers=4 --type=0 --KL_Lambda=1.0 --lambda=10.0 --lambda1=7.5 --lambda2=5.0 --lambda3=2.0 --lambda4=0.5 --max_lambda=1 --max_lambda1=0.75 --max_lambda2=0.5 --max_lambda3=0.2 --max_lambda4=0.05 --portion=0.00342 --beta=250 --mix_mode=1  --Mixmatch_warm=50 --dataset=SVHN
 ```
 This is the command for running SVHN with 250 labels.   
-When you want to run with "Wide Resnet-28-2-Large", which requires 4 gpus, simply change two parameters:
+When you want to run with "Wide Resnet-28-2-Large", which requires 4 gpus:    
 Simply change --type=1 --choose=0,1,2,3
 ``` 
 python3 main.py --mode=0 -F=tmp_data/SVHN --choose=0,1,2,3 --lr=0.002 --lr1=0.1 --batch_size=128 --num_workers=4 --type=1 --KL_Lambda=1.0 --lambda=10.0 --lambda1=7.5 --lambda2=5.0 --lambda3=2.0 --lambda4=0.5 --max_lambda=1 --max_lambda1=0.75 --max_lambda2=0.5 --max_lambda3=0.2 --max_lambda4=0.05 --portion=0.01367 --beta=250 --mix_mode=1  --Mixmatch_warm=50 --dataset=SVHN
