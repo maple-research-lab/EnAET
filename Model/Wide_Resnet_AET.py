@@ -40,7 +40,7 @@ class Wide_Resnet_AET_Model(nn.Module):
     def call_block(self,feat):
         feat = self.relu(self.bn1(feat))
         if self.run_type==2:
-            feat = F.avg_pool2d(feat, feat.size(1))
+            feat = F.avg_pool2d(feat, 12)
         else:
             feat = F.avg_pool2d(feat, 8)#now the
         # feat = feat.view(feat.size(0), -1)

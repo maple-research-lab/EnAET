@@ -325,7 +325,7 @@ class WX_WideResNet_STL(nn.Module):
             elif key == 'classifier':
 
                 feat = self.relu(self.bn1(feat))
-                feat = F.avg_pool2d(feat, feat.size(1))#reduce_mean
+                feat = F.avg_pool2d(feat, 12)#reduce_mean
                 #feat = feat.view(feat.size(0), -1)
                 feat=feat.view(-1, self.nChannels)
                 # feat = self.linear(feat)
