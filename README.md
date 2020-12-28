@@ -198,12 +198,15 @@ Here is our comparison with all previous SOTA methods.
 </p>
 
 ## Citation
-If you use any part of this code in your research, please cite our [paper](https://arxiv.org/abs/1911.09265):   
+If you use any part of this code in your research, please cite our [paper](https://ieeexplore.ieee.org/document/9301261):   
 ```
-@article{wang2019enaet,   
-  title={EnAET: Self-Trained Ensemble AutoEncoding Transformations for Semi-Supervised Learning},   
-  author={Wang, Xiao and Kihara, Daisuke and Luo, Jiebo and Qi, Guo-Jun},    
-  journal={arXiv preprint arXiv:1911.09265},    
-  year={2019}    
-}   
+@ARTICLE{EnAET,
+  author={X. {Wang} and D. {Kihara} and J. {Luo} and G. -J. {Qi}},
+  journal={IEEE Transactions on Image Processing}, 
+  title={EnAET: A Self-Trained framework for Semi-Supervised and Supervised Learning with Ensemble Transformations}, 
+  year={2020},
+  volume={},
+  number={},
+  pages={1-1},
+  doi={10.1109/TIP.2020.3044220}}
 ```
