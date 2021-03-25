@@ -45,7 +45,7 @@ Python-EasyConfig==0.1.7
 pytools==2017.6
 pytz==2018.3
 PyWavelets==0.5.1
-PyYAML==5.1
+PyYAML==5.4
 Resource==0.2.1
 scandir==1.7
 scikit-cuda==0.5.2
