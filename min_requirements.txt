@@ -1,6 +1,6 @@
 matplotlib==2.1.1
 numpy==1.16.5
-Pillow==5.1.0
+Pillow==9.0.1
 scipy==1.2.2
 tensorboard==1.14.0
 tensorboardX==1.7
