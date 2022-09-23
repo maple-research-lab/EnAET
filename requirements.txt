@@ -36,7 +36,7 @@ pexpect==4.2.1
 pickleshare==0.7.4
 Pillow==5.1.0
 prompt-toolkit==1.0.15
-protobuf==3.8.0
+protobuf==3.18.3
 pymongo==3.9.0
 pyparsing==2.2.0
 pyrsistent==0.15.2
