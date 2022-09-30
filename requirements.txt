@@ -17,7 +17,7 @@ h5py==2.9.0
 hyperopt==0.1.2
 ipython==5.5.0
 ipython-genutils==0.2.0
-joblib==0.11
+joblib==1.2.0
 JsonForm==0.0.2
 jsonschema==3.0.1
 JsonSir==0.0.2
